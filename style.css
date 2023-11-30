@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+}
+
+:root {
+  --primary: #355b3e;
+  --bg: #ffffff;
+  --accent: #b8d6bf;
+  --text: #58745e;
+  --button: #029664;
+}
+
+section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-image: url(asset/background/Illustration.png);
+  background-repeat: no-repeat;
+  background-size: 1105px;
+  background-position: right;
+}
+
+.bg-dekstop {
+  width: 1105px;
+  height: 100vh;
+}
+
+.login-container {
+  width: 815px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.bg-mobile {
+  display: none;
+}
+
+.logo a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--primary);
+  margin: 80px 0 150px 0;
+}
+
+.login-text h1 {
+  margin: 0 0 16px 0;
+  color: var(--primary);
+}
+
+.login-text p {
+  color: var(--text);
+  margin: 0 0 32px 0;
+}
+
+.inputbox {
+  margin-bottom: 24px;
+}
+
+.inputbox p {
+  margin-bottom: 8px;
+  color: #2f3d4c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inputbox input {
+  width: 625px;
+  height: 83px;
+  font-size: 16px;
+  color: var(--primary);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: none;
+  padding-left: 30px;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  display: none;
+}
+
+.inputbox label {
+  position: absolute;
+  left: 125px;
+  font-size: 16px;
+  color: var(--primary);
+  transform: translateY(150%);
+}
+
+.forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 625px;
+  margin: 0 0 24px 0;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forget input {
+  margin: 0 8px 0 0;
+  accent-color: var(--button);
+}
+
+.forget a {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.forget p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 628px;
+  margin: 0 0 80px 0;
+}
+
+.button button {
+  color: var(--button);
+  font-size: 16px;
+  font-weight: 600;
+  width: 295px;
+  height: 48px;
+  border: 1px solid var(--button);
+  border-radius: 8px;
+  background: none;
+}
+
+.button #login {
+  color: white;
+  background-color: var(--button);
+  border: none;
+}
+
+.other-login {
+  display: none;
+}
+
+.login-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 628px;
+}
+
+.login-option a {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.login-option p {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+}
+/* Media Queries */
+
+/* Mobile */
+@media only screen and (max-width: 428px) {
+  section {
+    background-image: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .bg-mobile {
+    display: contents;
+  }
+
+  .logo-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 428px;
+    height: 112px;
+    background-color: var(--primary);
+  }
+
+  .logo-mobile img {
+    margin-right: 16px;
+  }
+
+  .logo-mobile a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: 600;
+    color: white;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 428px;
+    height: 594px;
+    background-color: var(--bg);
+  }
+
+  .login-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .login-text {
+    margin: 40px 0 40px 0;
+  }
+
+  .login-text h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 0 0 16px 0;
+    line-height: 1.4;
+  }
+
+  .login-text p {
+    font-size: 16px;
+    font-size: 400;
+    color: var(--text);
+  }
+
+  .inputbox {
+    margin-bottom: 24px;
+  }
+
+  .inputbox p {
+    margin-bottom: 8px;
+    color: #2f3d4c;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .inputbox input {
+    width: 380px;
+    height: 56px;
+    left: 50px;
+    font-size: 16px;
+    color: var(--primary);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    background: none;
+    padding-left: 25px;
+  }
+
+  input:focus ~ label,
+  input:valid ~ label {
+    display: none;
+  }
+
+  .inputbox label {
+    position: absolute;
+    left: 50px;
+    font-size: 16px;
+    color: var(--primary);
+    transform: translateY(80%);
+  }
+
+  .forget {
+    display: inline-flex;
+    align-items: center;
+    width: 380px;
+    margin: 0 0 24px 0;
+  }
+
+  .forget input {
+    margin-right: 8px;
+    accent-color: var(--button);
+  }
+
+  .forget a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary);
+  }
+
+  .forget p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary);
+    margin: 0 110px 0 0;
+  }
+
+  .button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+    margin: 0 0 24px 0;
+  }
+
+  .button button {
+    color: var(--button);
+    font-size: 16px;
+    font-weight: 600;
+    width: 178px;
+    height: 48px;
+    border: 1px solid var(--button);
+    border-radius: 8px;
+    background: none;
+  }
+
+  .button #login {
+    color: white;
+    background-color: var(--button);
+    border: none;
+  }
+
+  .other-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    margin: 0 0 12px 0;
+  }
+
+  .login-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+  }
+
+  .other-login h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    gap: 16px;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 16px;
+  }
+
+  .login-option p {
+    display: none;
+  }
+}
