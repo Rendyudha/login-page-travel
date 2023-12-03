@@ -131,6 +131,7 @@ input:valid ~ label {
   font-size: 16px;
   font-weight: 400;
   color: var(--primary);
+  border-bottom: 1px solid var(--primary);
 }
 
 .forget p {
@@ -164,6 +165,14 @@ input:valid ~ label {
   border: none;
 }
 
+.button #login:hover {
+  background-color: #026d49;
+}
+
+.button #signup:hover {
+  background-color: rgba(0, 0, 0, 0.199);
+}
+
 .other-login {
   display: none;
 }
@@ -179,6 +188,11 @@ input:valid ~ label {
   color: var(--text);
   font-size: 16px;
   font-weight: 600;
+  padding: 10px 25px;
+}
+
+.login-option a:hover {
+  color: #374b3c;
 }
 
 .login-option p {
